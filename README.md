@@ -1,20 +1,21 @@
 # Matthew Jeans, PhD
 
-I am a quantitative research scientist and evaluation consultant who turns complex data into evidence people can use. My work spans education, public health, and applied research, with an emphasis on rigorous design, transparent analysis, and clear communication for technical and nontechnical audiences.
+I am a quantitative research scientist and evaluation consultant who turns messy, real-world data into trustworthy evidence people can use. My work spans education, public health, and applied research, from data extraction and quality review through statistical modeling, interpretation, and stakeholder delivery.
 
-## What I work on
+## Portfolio at a glance
 
-- Program evaluation and impact analysis
-- Quasi-experimental designs and propensity-score methods
-- Multilevel and longitudinal modeling
-- Large administrative and assessment datasets
-- Reproducible reporting, data quality, and analytic governance
-- Research project planning and cross-functional delivery
+| Area | Evidence in this portfolio |
+|---|---|
+| Data analysis | Multisource cleaning, SQL metrics, cohort analysis, data-quality checks, and decision-ready reporting |
+| Data science and research | Quasi-experimental designs, propensity-score methods, multilevel models, diagnostics, and robustness checks |
+| Reproducible delivery | Documented assumptions, synthetic data, automated tests, GitHub Actions, audit trails, and project controls |
 
-## Selected portfolio projects
+## Selected projects
 
 | Project | What it demonstrates |
 |---|---|
+| [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
+| [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | SQL data modeling, CTEs, window functions, cohort retention, anomaly review, tested outputs, and a decision memo |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching, covariate-balance diagnostics, clustered inference, robustness checks, and parallel R/Stata workflows |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal data, mixed-effects modeling, variance decomposition, diagnostics, and interpretation |
 | [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, automated validation, test coverage, audit reporting, and reusable SQL checks |
@@ -23,10 +24,12 @@ I am a quantitative research scientist and evaluation consultant who turns compl
 ## Methods and tools
 
 **Methods:** program evaluation, propensity-score methods, hierarchical linear modeling, mixed methods, measurement and assessment analysis, statistical reporting  
-**Primary tools:** Stata, R, Power BI, AWS Athena  
-**Additional experience:** SQL, Tableau, Snowflake, Git/GitHub  
+**Core analytic tools:** Stata and R  
+**Data and reporting:** SQL, AWS Athena, Power BI  
+**Additional exposure:** Tableau and Snowflake  
+**Reproducible workflows:** Git, GitHub, automated tests, and continuous integration  
 **Project management:** PMP certification expected August 2026
 
-The repositories here use synthetic data so the full workflow can be shared publicly without exposing client or participant information. Each project is designed to show the reasoning behind the analysis—not only the final model.
+All portfolio data are synthetic. The repositories are designed to make the full workflow shareable—including assumptions, quality checks, code, tests, outputs, and interpretation—without exposing client or participant information.
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/)
