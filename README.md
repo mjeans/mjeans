@@ -6,14 +6,15 @@ I am a quantitative research scientist and evaluation consultant who turns messy
 
 | Area | Evidence in this portfolio |
 |---|---|
-| Data analysis | Multisource cleaning, SQL metrics, cohort analysis, data-quality checks, and decision-ready reporting |
+| Data analysis and BI | SQL metrics, dimensional modeling, Power BI-ready measures, operational dashboards, data-quality checks, and decision-ready reporting |
 | Data science and research | Quasi-experimental designs, propensity-score methods, multilevel models, diagnostics, and robustness checks |
-| Reproducible delivery | Documented assumptions, synthetic data, automated tests, GitHub Actions, audit trails, and project controls |
+| Reproducible delivery | Documented assumptions, synthetic data generation, automated tests, GitHub Actions, audit trails, and project controls |
 
 ## Selected projects
 
 | Project | What it demonstrates |
 |---|---|
+| [Student success operations dashboard](https://github.com/mjeans/student-success-operations-dashboard) | End-to-end SQL and Power BI-ready BI project with a star schema, DAX, three dashboard views, tested metrics, implementation-risk prioritization, and an executive decision memo |
 | [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
 | [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | SQL data modeling, CTEs, window functions, cohort retention, anomaly review, tested outputs, and a decision memo |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching, covariate-balance diagnostics, clustered inference, robustness checks, and parallel R/Stata workflows |
