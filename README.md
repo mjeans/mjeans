@@ -8,13 +8,13 @@ With a PhD in Nutritional Sciences, I bring substantive training in nutrition to
 
 | Project | Question and methods |
 |---|---|
-| [Nutrition epidemiology case study](public-health-methods-lab/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
-| [Public Health Methods Lab](public-health-methods-lab/) | Nutrition epidemiology, respiratory-disease surveillance, direct age standardization, outbreak risk ratios, rolling signals, Kaplan-Meier analysis, automated tests, and generated outputs |
+| [Nutrition epidemiology case study](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
+| [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) | Nutrition epidemiology, respiratory-disease surveillance, direct age standardization, outbreak risk ratios, rolling signals, Kaplan-Meier analysis, automated tests, and generated outputs |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
 | [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
-**Featured quantitative-health project:** The [Public Health Methods Lab](public-health-methods-lab/) combines a nutrition epidemiology case study with reproducible surveillance, outbreak, and time-to-event examples. The project contains generated outputs, statistical assumptions, tests, and responsible-use boundaries.
+**Featured quantitative-health project:** The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) combines a nutrition epidemiology case study with reproducible surveillance, outbreak, and time-to-event examples. The project contains generated outputs, statistical assumptions, tests, and responsible-use boundaries.
 
 ## Education, data systems, and responsible analytics
 
