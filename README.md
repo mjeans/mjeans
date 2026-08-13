@@ -15,8 +15,8 @@ I am a quantitative research scientist and evaluation consultant who turns messy
 | Project | What it demonstrates |
 |---|---|
 | [Student success operations dashboard](https://github.com/mjeans/student-success-operations-dashboard) | End-to-end SQL and Power BI-ready BI project with a star schema, DAX, three dashboard views, tested metrics, implementation-risk prioritization, and an executive decision memo |
-| [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
 | [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | SQL data modeling, CTEs, window functions, cohort retention, anomaly review, tested outputs, and a decision memo |
+| [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching, covariate-balance diagnostics, clustered inference, robustness checks, and parallel R/Stata workflows |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal data, mixed-effects modeling, variance decomposition, diagnostics, and interpretation |
 | [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, automated validation, test coverage, audit reporting, and reusable SQL checks |
