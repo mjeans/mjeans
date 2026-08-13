@@ -20,6 +20,7 @@ I am a quantitative research scientist and evaluation consultant who turns messy
 | [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching, covariate-balance diagnostics, clustered inference, robustness checks, and parallel R/Stata workflows |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal data, mixed-effects modeling, variance decomposition, diagnostics, and interpretation |
+| [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and reproducible R/lavaan testing |
 | [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, automated validation, test coverage, audit reporting, and reusable SQL checks |
 | [Research project-management toolkit](https://github.com/mjeans/research-project-management-toolkit) | Charters, work plans, risk and decision controls, stage gates, change management, and evaluation governance |
 
