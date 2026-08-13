@@ -1,21 +1,22 @@
 # Matthew Jeans, PhD
 
-**Quantitative research scientist focused on public health, biostatistics, epidemiology, and program evaluation.**
+**Quantitative research scientist working across nutrition, education, public health, biostatistics, epidemiology, and program evaluation.**
 
-I turn complex administrative and longitudinal data into evidence that is transparent enough to audit and practical enough to use. My portfolio emphasizes defensible estimands, diagnostic checks, reproducible code, careful uncertainty, and clear boundaries between association, prediction, and causation.
+With a PhD in Nutritional Sciences, I bring substantive training in nutrition together with experience across education, public health, and applied evaluation. I turn complex administrative, longitudinal, and survey data into evidence that is transparent enough to audit and practical enough to use. My portfolio emphasizes defensible estimands, diagnostic checks, reproducible code, careful uncertainty, and clear boundaries between association, prediction, and causation.
 
-## Public health, biostatistics, and epidemiology
+## Nutrition, public health, and applied methods
 
 | Project | Question and methods |
 |---|---|
-| [Public Health Methods Lab](public-health-methods-lab/) | Respiratory-disease surveillance with direct age standardization, approximate Poisson intervals, outbreak attack rates and risk ratios, rolling signals, Kaplan-Meier retention analysis, Greenwood confidence limits, automated tests, and generated figures |
+| [Nutrition epidemiology case study](public-health-methods-lab/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
+| [Public Health Methods Lab](public-health-methods-lab/) | Nutrition epidemiology, respiratory-disease surveillance, direct age standardization, outbreak risk ratios, rolling signals, Kaplan-Meier analysis, automated tests, and generated outputs |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
 | [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
-**Featured public-health project:** The [Public Health Methods Lab](public-health-methods-lab/) is a fully synthetic, reproducible demonstration of how I move from surveillance counts to comparable rates, outbreak measures, and time-to-event interpretation. The project contains the generated figures, statistical assumptions, tests, and responsible-use boundaries.
+**Featured quantitative-health project:** The [Public Health Methods Lab](public-health-methods-lab/) combines a nutrition epidemiology case study with reproducible surveillance, outbreak, and time-to-event examples. The project contains generated outputs, statistical assumptions, tests, and responsible-use boundaries.
 
-## Data systems and responsible analytics
+## Education, data systems, and responsible analytics
 
 | Project | What reviewers can inspect |
 |---|---|
@@ -34,7 +35,7 @@ I turn complex administrative and longitudinal data into evidence that is transp
 
 ## Methods and tools
 
-**Epidemiology and biostatistics:** surveillance rates, direct standardization, cohort measures, time-to-event analysis, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty and sensitivity analysis  
+**Nutrition, epidemiology, and biostatistics:** dietary recall analysis, energy adjustment, surveillance rates, direct standardization, cohort measures, time-to-event analysis, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty and sensitivity analysis  
 **Analysis:** R, Stata, Python, SQL  
 **Data and reporting:** AWS Athena, Power BI; additional exposure to Tableau, Snowflake, and reproducible Quarto reporting  
 **Delivery:** Git, GitHub Actions, automated tests, data contracts, model cards, decision memos, and research governance  
@@ -42,6 +43,6 @@ I turn complex administrative and longitudinal data into evidence that is transp
 
 ## Portfolio standards
 
-All portfolio records are synthetic. No client, student, patient, participant, or protected health information is published. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
+All portfolio records are synthetic. No client, student, patient, dietary-recall participant, or protected health information is published. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/)

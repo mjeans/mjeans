@@ -14,7 +14,9 @@ sys.path.insert(0, str(ROOT / "src"))
 from public_health_methods import (  # noqa: E402
     direct_standardized_rate,
     kaplan_meier,
+    mean_difference,
     median_event_time,
+    nutrient_density,
     risk_ratio,
     weekly_z_signals,
 )
@@ -35,6 +37,17 @@ class TestEpidemiologyMethods(unittest.TestCase):
         self.assertAlmostEqual(result["risk_ratio"], 4.0)
         self.assertLess(result["lower_95"], 4.0)
         self.assertGreater(result["upper_95"], 4.0)
+
+    def test_nutrient_density(self) -> None:
+        self.assertAlmostEqual(nutrient_density(24, 2_000), 12.0)
+        with self.assertRaises(ValueError):
+            nutrient_density(24, 0)
+
+    def test_mean_difference(self) -> None:
+        result = mean_difference([2.0, 3.0, 4.0], [1.0, 2.0, 3.0])
+        self.assertAlmostEqual(result["difference"], 1.0)
+        self.assertLess(result["lower_95"], 1.0)
+        self.assertGreater(result["upper_95"], 1.0)
 
     def test_surveillance_flags_large_increase(self) -> None:
         results = weekly_z_signals([8, 9, 7, 10, 9, 11, 8, 10, 29])

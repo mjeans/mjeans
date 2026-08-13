@@ -106,6 +106,40 @@ def risk_ratio(
     }
 
 
+def nutrient_density(
+    nutrient_amount: float, energy_kcal: float, per_kcal: float = 1_000.0
+) -> float:
+    """Express a nutrient amount per a specified number of kilocalories."""
+
+    if nutrient_amount < 0:
+        raise ValueError("nutrient amount cannot be negative")
+    if energy_kcal <= 0 or per_kcal <= 0:
+        raise ValueError("energy and density denominator must be positive")
+    return nutrient_amount / energy_kcal * per_kcal
+
+
+def mean_difference(
+    group_a: Sequence[float], group_b: Sequence[float]
+) -> dict[str, float]:
+    """Return a descriptive mean difference and normal-approximation 95% CI."""
+
+    if len(group_a) < 2 or len(group_b) < 2:
+        raise ValueError("each group must contain at least two observations")
+    estimate = mean(group_a) - mean(group_b)
+    standard_error = sqrt(
+        (stdev(group_a) ** 2 / len(group_a))
+        + (stdev(group_b) ** 2 / len(group_b))
+    )
+    return {
+        "mean_a": mean(group_a),
+        "mean_b": mean(group_b),
+        "difference": estimate,
+        "standard_error": standard_error,
+        "lower_95": estimate - Z_975 * standard_error,
+        "upper_95": estimate + Z_975 * standard_error,
+    }
+
+
 def weekly_z_signals(
     counts: Sequence[int], baseline_weeks: int = 4, threshold: float = 2.5
 ) -> list[dict[str, float | int | bool | None]]:

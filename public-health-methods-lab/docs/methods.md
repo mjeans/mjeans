@@ -1,5 +1,17 @@
 # Methods and assumptions
 
+## Nutrient density and dietary recalls
+
+For each synthetic participant, two 24-hour recalls are averaged before fiber and sodium are expressed per 1,000 kilocalories:
+
+```text
+Nutrient density = nutrient amount / energy intake * 1,000
+```
+
+Group contrasts are the nutrition-education mean minus the comparison mean, with a normal-approximation confidence interval based on independent group standard errors. These are descriptive contrasts, not causal effects.
+
+Energy adjustment can make nutrient comparisons less dependent on total energy intake, but it does not correct recall bias, correlated reporting error, or within-person variation. Two recalls are not treated as an estimate of long-term usual intake. No dietary-guideline or clinical threshold is applied to the synthetic observations. See the [nutrition case study](nutrition-case-study.md) for the complete design and interpretation boundaries.
+
 ## Direct age standardization
 
 For age stratum `i`, the observed rate is `r_i = d_i / n_i`, where `d_i` is the number of cases and `n_i` is person-time. The directly standardized rate is:

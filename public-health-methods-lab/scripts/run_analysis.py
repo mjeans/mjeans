@@ -13,7 +13,9 @@ sys.path.insert(0, str(ROOT / "src"))
 from public_health_methods import (  # noqa: E402
     direct_standardized_rate,
     kaplan_meier,
+    mean_difference,
     median_event_time,
+    nutrient_density,
     risk_ratio,
     weekly_z_signals,
 )
@@ -42,6 +44,24 @@ RETENTION_RECORDS = {
         (5, 1), (8, 1), (10, 0), (12, 1), (15, 1), (18, 0), (20, 1),
         (24, 1), (28, 0), (30, 1), (35, 1), (40, 0), (45, 1), (50, 0),
         (55, 1), (60, 0), (65, 1), (70, 0), (80, 1), (90, 0),
+    ],
+}
+
+# Person-level means from two hypothetical 24-hour recalls. The paired recall
+# days are constructed around these values so the workflow remains compact and
+# deterministic while still demonstrating within-person averaging.
+NUTRITION_PEOPLE = {
+    "Nutrition education": [
+        (1_950, 23, 2_400), (2_100, 31, 2_200), (2_250, 27, 2_700),
+        (2_000, 35, 2_050), (2_180, 25, 2_600), (2_320, 33, 2_350),
+        (2_080, 29, 2_800), (2_240, 24, 2_250), (1_880, 32, 2_450),
+        (2_160, 28, 2_900),
+    ],
+    "Comparison": [
+        (2_050, 20, 3_100), (2_220, 16, 3_500), (2_380, 25, 2_950),
+        (2_100, 18, 3_300), (2_300, 27, 3_650), (2_450, 19, 3_200),
+        (2_180, 23, 3_700), (2_360, 17, 3_000), (1_980, 26, 3_400),
+        (2_260, 21, 3_550),
     ],
 }
 
@@ -90,6 +110,80 @@ def retention_results() -> tuple[list[dict[str, object]], dict[str, float | None
                 }
             )
     return rows, medians
+
+
+def nutrition_results() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    person_rows: list[dict[str, object]] = []
+    for group, people in NUTRITION_PEOPLE.items():
+        for index, (energy_mean, fiber_mean, sodium_mean) in enumerate(people, start=1):
+            recalls = [
+                (energy_mean - 100, fiber_mean - 2, sodium_mean + 150),
+                (energy_mean + 100, fiber_mean + 2, sodium_mean - 150),
+            ]
+            energy = sum(row[0] for row in recalls) / len(recalls)
+            fiber = sum(row[1] for row in recalls) / len(recalls)
+            sodium = sum(row[2] for row in recalls) / len(recalls)
+            person_rows.append(
+                {
+                    "participant_id": f"{group[0]}{index:02d}",
+                    "group": group,
+                    "completed_recalls": len(recalls),
+                    "mean_energy_kcal": energy,
+                    "fiber_g_per_1000_kcal": nutrient_density(fiber, energy),
+                    "sodium_mg_per_1000_kcal": nutrient_density(sodium, energy),
+                }
+            )
+
+    summaries: list[dict[str, object]] = []
+    for group in NUTRITION_PEOPLE:
+        group_rows = [row for row in person_rows if row["group"] == group]
+        summaries.append(
+            {
+                "group": group,
+                "participants": len(group_rows),
+                "complete_two_recall_percent": 100.0,
+                "mean_energy_kcal": round(
+                    sum(float(row["mean_energy_kcal"]) for row in group_rows)
+                    / len(group_rows),
+                    1,
+                ),
+                "mean_fiber_g_per_1000_kcal": round(
+                    sum(float(row["fiber_g_per_1000_kcal"]) for row in group_rows)
+                    / len(group_rows),
+                    2,
+                ),
+                "mean_sodium_mg_per_1000_kcal": round(
+                    sum(float(row["sodium_mg_per_1000_kcal"]) for row in group_rows)
+                    / len(group_rows),
+                    1,
+                ),
+            }
+        )
+
+    contrasts: list[dict[str, object]] = []
+    for field, label in (
+        ("fiber_g_per_1000_kcal", "Fiber (g per 1,000 kcal)"),
+        ("sodium_mg_per_1000_kcal", "Sodium (mg per 1,000 kcal)"),
+    ):
+        group_a = [
+            float(row[field])
+            for row in person_rows
+            if row["group"] == "Nutrition education"
+        ]
+        group_b = [
+            float(row[field])
+            for row in person_rows
+            if row["group"] == "Comparison"
+        ]
+        estimate = mean_difference(group_a, group_b)
+        contrasts.append(
+            {
+                "measure": label,
+                "contrast": "Nutrition education minus comparison",
+                **{key: round(value, 3) for key, value in estimate.items()},
+            }
+        )
+    return summaries, contrasts
 
 
 def write_rate_svg(rows: list[dict[str, object]]) -> None:
@@ -218,6 +312,10 @@ def main() -> None:
 
     retention, medians = retention_results()
     write_csv(OUTPUTS / "retention_curve.csv", retention)
+
+    nutrition_summaries, nutrition_contrasts = nutrition_results()
+    write_csv(OUTPUTS / "nutrition_density_summary.csv", nutrition_summaries)
+    write_csv(OUTPUTS / "nutrition_group_contrasts.csv", nutrition_contrasts)
     write_rate_svg(rates)
     write_km_svg(retention)
 
@@ -225,6 +323,12 @@ def main() -> None:
     flagged_weeks = [row["week"] for row in signals if row["signal"]]
     enhanced_median = medians["Enhanced outreach"]
     standard_median = medians["Standard outreach"]
+    fiber_contrast = next(
+        row for row in nutrition_contrasts if str(row["measure"]).startswith("Fiber")
+    )
+    sodium_contrast = next(
+        row for row in nutrition_contrasts if str(row["measure"]).startswith("Sodium")
+    )
     summary = f"""# Reproducible reference results
 
 These outputs are generated from deterministic synthetic data.
@@ -233,6 +337,7 @@ These outputs are generated from deterministic synthetic data.
 - **Surveillance signal:** week {', '.join(str(week) for week in flagged_weeks)} crossed the illustrative rolling z-score threshold.
 - **Outbreak association:** shared-meal exposure was associated with a risk ratio of {outbreak['risk_ratio']:.2f} (95% CI {outbreak['lower_95']:.2f}–{outbreak['upper_95']:.2f}).
 - **Median time to disengagement:** {enhanced_median if enhanced_median is not None else 'not reached'} days with enhanced outreach and {standard_median if standard_median is not None else 'not reached'} days with standard outreach.
+- **Nutrition epidemiology:** the synthetic nutrition-education group had {float(fiber_contrast['difference']):.2f} more grams of fiber and {abs(float(sodium_contrast['difference'])):.1f} fewer milligrams of sodium per 1,000 kcal than the comparison group.
 
 These results demonstrate implementation, not real-world evidence. The data are synthetic, the surveillance threshold is illustrative, and the outreach comparison is descriptive rather than causal.
 """
