@@ -15,7 +15,9 @@ With a PhD in Nutritional Sciences, I bring substantive training in nutrition to
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
 | [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
-**Featured quantitative-health project:** The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) combines a nutrition epidemiology case study with reproducible surveillance, outbreak, and time-to-event examples. The project contains generated outputs, statistical assumptions, tests, and responsible-use boundaries.
+**Featured nutritional-epidemiology project:** The [NHANES Nutrition Survey Analysis](https://github.com/mjeans/nhanes-nutrition-survey-analysis) uses deidentified CDC public-use data to demonstrate two-day dietary measurement, complex-survey inference, missing-data reporting, and descriptive regression.
+
+The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) complements it with synthetic, reproducible surveillance, outbreak, nutrition, and time-to-event examples.
 
 ## Selected nutrition scholarship
 
