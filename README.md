@@ -25,7 +25,7 @@ The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-
 - [Impact of a school-based gardening, cooking, and nutrition intervention on diet intake and quality](https://pubmed.ncbi.nlm.nih.gov/34578959/) — TX Sprouts cluster randomized controlled trial
 - [Design and participant characteristics of TX Sprouts](https://pmc.ncbi.nlm.nih.gov/articles/PMC7587328/) — intervention design and cohort profile
 
-[ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3) provides a broader publication record.
+My persistent researcher identifier is [ORCID 0000-0002-1140-3185](https://orcid.org/0000-0002-1140-3185). The complete public publication list is available through [My NCBI Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/), with an additional profile on [ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3).
 
 ## Education, data systems, and responsible analytics
 
@@ -56,4 +56,4 @@ The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-
 
 Portfolio projects use either deterministic synthetic records or explicitly documented deidentified public-use data. No client, student, patient, protected health information, restricted records, or row-level public-use files are republished. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
 
-[Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/) · [View publications on ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3)
+[LinkedIn](https://www.linkedin.com/in/matthewjeans/) · [ORCID](https://orcid.org/0000-0002-1140-3185) · [My NCBI Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/) · [ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3)
