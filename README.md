@@ -13,7 +13,7 @@ I turn complex administrative and longitudinal data into evidence that is transp
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
 | [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
-![Age-standardized surveillance rates](public-health-methods-lab/assets/age-standardized-rates.svg)
+**Featured public-health project:** The [Public Health Methods Lab](public-health-methods-lab/) is a fully synthetic, reproducible demonstration of how I move from surveillance counts to comparable rates, outbreak measures, and time-to-event interpretation. The project contains the generated figures, statistical assumptions, tests, and responsible-use boundaries.
 
 ## Data systems and responsible analytics
 
