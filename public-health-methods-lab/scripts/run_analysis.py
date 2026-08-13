@@ -49,7 +49,7 @@ RETENTION_RECORDS = {
 def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -134,7 +134,9 @@ def write_rate_svg(rows: list[dict[str, object]]) -> None:
             ]
         )
     pieces.append('</svg>')
-    (ASSETS / "age-standardized-rates.svg").write_text("\n".join(pieces), encoding="utf-8")
+    (ASSETS / "age-standardized-rates.svg").write_text(
+        "\n".join(pieces), encoding="utf-8", newline="\n"
+    )
 
 
 def write_km_svg(rows: list[dict[str, object]]) -> None:
@@ -184,7 +186,9 @@ def write_km_svg(rows: list[dict[str, object]]) -> None:
             '</svg>',
         ]
     )
-    (ASSETS / "retention-curves.svg").write_text("\n".join(pieces), encoding="utf-8")
+    (ASSETS / "retention-curves.svg").write_text(
+        "\n".join(pieces), encoding="utf-8", newline="\n"
+    )
 
 
 def main() -> None:
@@ -232,7 +236,7 @@ These outputs are generated from deterministic synthetic data.
 
 These results demonstrate implementation, not real-world evidence. The data are synthetic, the surveillance threshold is illustrative, and the outreach comparison is descriptive rather than causal.
 """
-    (OUTPUTS / "summary.md").write_text(summary, encoding="utf-8")
+    (OUTPUTS / "summary.md").write_text(summary, encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
