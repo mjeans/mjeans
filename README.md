@@ -1,38 +1,47 @@
 # Matthew Jeans, PhD
 
-I am a quantitative research scientist and evaluation consultant who turns messy, real-world data into trustworthy evidence people can use. My work spans education, public health, and applied research, from data extraction and quality review through statistical modeling, interpretation, and stakeholder delivery.
+**Quantitative research scientist focused on public health, biostatistics, epidemiology, and program evaluation.**
 
-## Portfolio at a glance
+I turn complex administrative and longitudinal data into evidence that is transparent enough to audit and practical enough to use. My portfolio emphasizes defensible estimands, diagnostic checks, reproducible code, careful uncertainty, and clear boundaries between association, prediction, and causation.
 
-| Area | Evidence in this portfolio |
+## Public health, biostatistics, and epidemiology
+
+| Project | Question and methods |
 |---|---|
-| Data analysis and BI | SQL metrics, dimensional modeling, Power BI-ready measures, operational dashboards, data-quality checks, and decision-ready reporting |
-| Data science and research | Quasi-experimental designs, propensity-score methods, multilevel models, diagnostics, and robustness checks |
-| Reproducible delivery | Documented assumptions, synthetic data generation, automated tests, GitHub Actions, audit trails, and project controls |
+| [Public Health Methods Lab](public-health-methods-lab/) | Respiratory-disease surveillance with direct age standardization, approximate Poisson intervals, outbreak attack rates and risk ratios, rolling signals, Kaplan-Meier retention analysis, Greenwood confidence limits, automated tests, and generated figures |
+| [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
+| [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
+| [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
-## Selected projects
+![Age-standardized surveillance rates](public-health-methods-lab/assets/age-standardized-rates.svg)
 
-| Project | What it demonstrates |
+## Data systems and responsible analytics
+
+| Project | What reviewers can inspect |
 |---|---|
-| [Student success operations dashboard](https://github.com/mjeans/student-success-operations-dashboard) | End-to-end SQL and Power BI-ready BI project with a star schema, DAX, three dashboard views, tested metrics, implementation-risk prioritization, and an executive decision memo |
-| [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | SQL data modeling, CTEs, window functions, cohort retention, anomaly review, tested outputs, and a decision memo |
-| [Student success predictive modeling](https://github.com/mjeans/student-success-predictive-modeling) | Temporal validation, probability calibration, capacity-aware thresholding, subgroup diagnostics, responsible-use controls, and reproducible R scoring |
-| [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Stata and R workflows that standardize, deduplicate, join, audit, and test messy multisource administrative records |
-| [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching, covariate-balance diagnostics, clustered inference, robustness checks, and parallel R/Stata workflows |
-| [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal data, mixed-effects modeling, variance decomposition, diagnostics, and interpretation |
-| [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and reproducible R/lavaan testing |
-| [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, automated validation, test coverage, audit reporting, and reusable SQL checks |
-| [Research project-management toolkit](https://github.com/mjeans/research-project-management-toolkit) | Charters, work plans, risk and decision controls, stage gates, change management, and evaluation governance |
+| [Administrative data pipeline](https://github.com/mjeans/administrative-data-pipeline) | Multisource standardization, deduplication, joins, audit trails, reproducible R/Stata workflows, and validation tests |
+| [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, domain/range and cross-field rules, issue-level audit output, reusable SQL checks, and CI |
+| [Student success predictive modeling](https://github.com/mjeans/student-success-predictive-modeling) | Temporal validation, calibration, capacity-aware thresholds, subgroup diagnostics, model cards, and human-review controls |
+| [Student success operations dashboard](https://github.com/mjeans/student-success-operations-dashboard) | SQL metric layer, dimensional modeling, Power BI-ready measures, implementation monitoring, tested KPIs, and an executive decision memo |
+| [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | CTEs, windows, cohorts, anomaly review, tested outputs, metric documentation, and decision-ready interpretation |
+
+## How I work
+
+- **Start with the decision and estimand.** Define the population, comparison, outcome, time window, and interpretation before fitting a model.
+- **Make validity visible.** Surface missingness, data quality, balance, calibration, clustering, uncertainty, subgroup behavior, and model assumptions.
+- **Build for reproduction.** Use deterministic synthetic data, executable workflows, tests, continuous integration, data dictionaries, and saved reference outputs.
+- **Communicate limits clearly.** Separate descriptive, predictive, associational, and causal claims; keep privacy and responsible-use constraints close to the results.
 
 ## Methods and tools
 
-**Methods:** program evaluation, propensity-score methods, hierarchical linear modeling, mixed methods, measurement and assessment analysis, statistical reporting  
-**Core analytic tools:** Stata and R  
-**Data and reporting:** SQL, AWS Athena, Power BI  
-**Additional exposure:** Tableau and Snowflake  
-**Reproducible workflows:** Git, GitHub, automated tests, and continuous integration  
-**Project management:** PMP certification expected August 2026
+**Epidemiology and biostatistics:** surveillance rates, direct standardization, cohort measures, time-to-event analysis, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty and sensitivity analysis  
+**Analysis:** R, Stata, Python, SQL  
+**Data and reporting:** AWS Athena, Power BI; additional exposure to Tableau, Snowflake, and reproducible Quarto reporting  
+**Delivery:** Git, GitHub Actions, automated tests, data contracts, model cards, decision memos, and research governance  
+**Project leadership:** research operations, stakeholder engagement, scope and risk management; PMP certification expected August 2026
 
-All portfolio data are synthetic. The repositories are designed to make the full workflow shareable—including assumptions, quality checks, code, tests, outputs, and interpretation—without exposing client or participant information.
+## Portfolio standards
+
+All portfolio records are synthetic. No client, student, patient, participant, or protected health information is published. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/)
