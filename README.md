@@ -8,6 +8,7 @@ With a PhD in Nutritional Sciences, I bring substantive training in nutrition to
 
 | Project | Question and methods |
 |---|---|
+| [NHANES nutrition survey analysis](https://github.com/mjeans/nhanes-nutrition-survey-analysis) | Public two-day dietary recalls, energy-adjusted fiber and sodium density, dietary weights, domain estimates, Taylor-linearized uncertainty, missing-data flow, and survey-weighted regression |
 | [Nutrition epidemiology case study](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
 | [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) | Nutrition epidemiology, respiratory-disease surveillance, direct age standardization, outbreak risk ratios, rolling signals, Kaplan-Meier analysis, automated tests, and generated outputs |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
@@ -15,6 +16,14 @@ With a PhD in Nutritional Sciences, I bring substantive training in nutrition to
 | [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
 
 **Featured quantitative-health project:** The [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) combines a nutrition epidemiology case study with reproducible surveillance, outbreak, and time-to-event examples. The project contains generated outputs, statistical assumptions, tests, and responsible-use boundaries.
+
+## Selected nutrition scholarship
+
+- [Breakfast consumption in low-income Hispanic elementary school-aged children](https://doi.org/10.3390/nu12072038) — first-author cross-sectional study of anthropometric, metabolic, and dietary parameters
+- [Impact of a school-based gardening, cooking, and nutrition intervention on diet intake and quality](https://pubmed.ncbi.nlm.nih.gov/34578959/) — TX Sprouts cluster randomized controlled trial
+- [Design and participant characteristics of TX Sprouts](https://pmc.ncbi.nlm.nih.gov/articles/PMC7587328/) — intervention design and cohort profile
+
+[ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3) provides a broader publication record.
 
 ## Education, data systems, and responsible analytics
 
@@ -43,6 +52,6 @@ With a PhD in Nutritional Sciences, I bring substantive training in nutrition to
 
 ## Portfolio standards
 
-All portfolio records are synthetic. No client, student, patient, dietary-recall participant, or protected health information is published. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
+Portfolio projects use either deterministic synthetic records or explicitly documented deidentified public-use data. No client, student, patient, protected health information, restricted records, or row-level public-use files are republished. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
 
-[Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/)
+[Connect with me on LinkedIn](https://www.linkedin.com/in/matthewjeans/) · [View publications on ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3)
