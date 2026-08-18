@@ -1,6 +1,6 @@
-# Matthew Jeans, PhD
+# Matthew Jeans, PhD, PMP
 
-**Quantitative research scientist working across nutrition, education, public health, biostatistics, epidemiology, and program evaluation.**
+**Quantitative research scientist and PMP-certified project leader working across nutrition, education, public health, biostatistics, epidemiology, and program evaluation.**
 
 With a PhD in Nutritional Sciences, I bring substantive training in nutrition together with experience across education, public health, and applied evaluation. I turn complex administrative, longitudinal, and survey data into evidence that is transparent enough to audit and practical enough to use. My portfolio emphasizes defensible estimands, diagnostic checks, reproducible code, careful uncertainty, and clear boundaries between association, prediction, and causation.
 
@@ -50,7 +50,7 @@ My persistent researcher identifier is [ORCID 0000-0002-1140-3185](https://orcid
 **Analysis:** R, Stata, Python, SQL  
 **Data and reporting:** AWS Athena, Power BI; additional exposure to Tableau, Snowflake, and reproducible Quarto reporting  
 **Delivery:** Git, GitHub Actions, automated tests, data contracts, model cards, decision memos, and research governance  
-**Project leadership:** research operations, stakeholder engagement, scope and risk management; PMP certification expected August 2026
+**Project leadership:** PMP-certified project leadership, research operations, stakeholder engagement, scope and risk management
 
 ## Portfolio standards
 
