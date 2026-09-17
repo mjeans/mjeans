@@ -1,6 +1,6 @@
 # Matthew Jeans, PhD, PMP
 
-**Quantitative research scientist and PMP-certified project leader using administrative, longitudinal, survey, and implementation data across public health, nutrition, education, and program evaluation.**
+**Quantitative research scientist with a PhD in Nutritional Sciences and PMP certification, working across nutrition, public health, education, and program evaluation.**
 
 I turn complex data into evidence that is transparent enough to audit and practical enough to use. My work emphasizes explicit research questions, defensible estimands, visible data-quality and model diagnostics, reproducible workflows, and clear boundaries between descriptive, predictive, associational, and causal claims.
 
@@ -10,19 +10,19 @@ I turn complex data into evidence that is transparent enough to audit and practi
 
 **Public health, nutrition, and biostatistics.** A reproducible Python analysis of deidentified NHANES 2017–2018 public-use dietary data. It demonstrates two-day dietary measurement, complex-survey weighting and domain estimation, Taylor-linearized uncertainty, missing-data reporting, descriptive regression, unit tests, deterministic outputs, and scheduled validation.
 
-[Methods and limitations](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/docs/methods.md) · [Generated findings](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/outputs/summary.md)
+[Executed analysis and sensitivity report](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/outputs/report.md) · [Methods and limitations](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/docs/methods.md)
 
 ### [Administrative Data Pipeline](https://github.com/mjeans/administrative-data-pipeline)
 
 **Evaluation analytics and messy multi-source data.** A reproducible R and Stata workflow that standardizes, deduplicates, joins, and audits synthetic enrollment, service, outcome, and site data. Reviewers can inspect the quality rules, data dictionary, audit trail, tests, and continuous-integration checks.
 
-[Data dictionary](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/data-dictionary.md) · [Quality rules](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/quality-rules.md)
+[Executed before/after audit](https://github.com/mjeans/administrative-data-pipeline/blob/main/outputs/report.md) · [Data dictionary](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/data-dictionary.md) · [Quality rules](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/quality-rules.md)
 
 ### [Student Success Operations Dashboard](https://github.com/mjeans/student-success-operations-dashboard)
 
 **SQL, business intelligence, and decision support.** A tested analytics workflow with a SQL metric layer, dimensional model, reproducible Python-generated data, Power BI-ready measures, dashboard previews, implementation-risk monitoring, and an executive decision memo.
 
-[Dashboard preview](https://github.com/mjeans/student-success-operations-dashboard/blob/main/assets/executive-dashboard.png) · [Metric definitions](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/metric-definitions.md) · [Decision memo](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/decision-memo.md)
+[Current dashboard preview](https://github.com/mjeans/student-success-operations-dashboard/blob/main/assets/executive-dashboard.svg) · [Metric definitions](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/metric-definitions.md) · [Decision memo](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/decision-memo.md)
 
 ## Additional portfolio projects
 
@@ -46,6 +46,8 @@ I turn complex data into evidence that is transparent enough to audit and practi
 | [Research project-management toolkit](https://github.com/mjeans/research-project-management-toolkit) | Project charters, evaluation plans, work plans, risk and stakeholder registers, stage gates, change control, issue templates, and automated template validation |
 
 ## Selected nutrition scholarship
+
+The [worked nutrition-evaluation planning example](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/charter.md) connects dietary assessment to research governance, scope, risk, and deliverable acceptance. It is a fictional portfolio example, separate from the published studies below.
 
 - [Breakfast consumption in low-income Hispanic elementary school-aged children](https://doi.org/10.3390/nu12072038) — first-author cross-sectional study of anthropometric, metabolic, and dietary parameters
 - [Impact of a school-based gardening, cooking, and nutrition intervention on diet intake and quality](https://pubmed.ncbi.nlm.nih.gov/34578959/) — TX Sprouts cluster randomized controlled trial
