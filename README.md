@@ -4,7 +4,13 @@
 
 I turn complex data into evidence that is transparent enough to audit and practical enough to use. My work emphasizes explicit research questions, defensible estimands, visible data-quality and model diagnostics, reproducible workflows, and clear boundaries between descriptive, predictive, associational, and causal claims.
 
-## Start here
+## Selected work samples
+
+- **Published nutrition research:** [TX Sprouts: unprocessed and ultra-processed food consumption](https://pmc.ncbi.nlm.nih.gov/articles/PMC10375509/). As first author, I analyzed dietary recalls in Stata and prepared the figures for this 16-school randomized trial. The analysis accounted for students clustered within schools.
+- **Stata data management:** [Open the enrollment and service-revision do-file](https://github.com/mjeans/administrative-data-pipeline/blob/main/examples/stata-enrollment/stata_data_management_sample.do) · [Read the worked examples and verification status](https://github.com/mjeans/administrative-data-pipeline/tree/main/examples/stata-enrollment). The synthetic sample reconciles overlapping spells and corrected visits, distinguishing zero use from incomplete reporting. Independent fixture checks pass; native Stata execution is pending.
+- **Program leadership:** [Decision memo: two sites are missing second dietary recalls](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/second-recall-decision.md). A fictional six-site pilot shows how I would distinguish a reporting delay from an access problem, assign follow-up, and decide whether to continue a scheduling change.
+
+## Featured projects
 
 ### [NHANES Nutrition Survey Analysis](https://github.com/mjeans/nhanes-nutrition-survey-analysis)
 
@@ -47,7 +53,7 @@ I turn complex data into evidence that is transparent enough to audit and practi
 
 ## Selected nutrition scholarship
 
-The [worked nutrition-evaluation planning example](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/charter.md) connects dietary assessment to research governance, scope, risk, and deliverable acceptance. It is a fictional portfolio example, separate from the published studies below.
+In addition to the featured [first-author TX Sprouts analysis of food processing](https://pubmed.ncbi.nlm.nih.gov/37116658/), selected studies include:
 
 - [Breakfast consumption in low-income Hispanic elementary school-aged children](https://doi.org/10.3390/nu12072038) — first-author cross-sectional study of anthropometric, metabolic, and dietary parameters
 - [Impact of a school-based gardening, cooking, and nutrition intervention on diet intake and quality](https://pubmed.ncbi.nlm.nih.gov/34578959/) — TX Sprouts cluster randomized controlled trial
