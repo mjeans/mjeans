@@ -10,7 +10,15 @@ Start with my [first-author TX Sprouts paper](https://pmc.ncbi.nlm.nih.gov/artic
 
 **A useful review question:** What population and measurement window does an estimate represent? Two recalls are not usual intake, and descriptive associations do not identify a dietary intervention effect.
 
-## Machine learning and education data science
+## Machine learning across nutrition and education
+
+Start with the [nutrition ML benchmark](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/nutrition-machine-learning) for a real-data example linking my nutritional sciences background to predictive modeling. It develops models on NHANES 2015–2016 and evaluates them on 2017–2018, comparing body/demographic measurements with and without dietary summaries.
+
+**Look for:** an explicit feature boundary; training-only preprocessing; PSU-grouped cross-validation; weighted baselines and nonlinear alternatives; same-sample paired comparisons; uncertainty intervals; and model interpretation that does not imply causation. The [executed report](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/outputs/report.md) shows that the selected dietary summaries did not clearly improve the selected pipeline. This honest negative result is part of the work, not a claim that nutrition is unimportant.
+
+**A useful review question:** Was the model chosen before the test results were inspected, and what does the test population actually represent?
+
+### Education prediction and monitoring
 
 The [education predictive-modeling report](https://github.com/mjeans/student-success-predictive-modeling/blob/main/outputs/report.md) follows a model from development to a later academic-year test cohort. The [input-monitoring extension](https://github.com/mjeans/student-success-predictive-modeling/blob/main/outputs/input-monitoring-report.md) then asks what happens when a scoring feed arrives with wrong units or substantially more missing data.
 
