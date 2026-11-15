@@ -21,6 +21,12 @@ I turn complex data into evidence that is transparent enough to audit and practi
 
 [Executed analysis and sensitivity report](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/outputs/report.md) · [Methods and limitations](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/docs/methods.md)
 
+### [Nutrition and Machine Learning](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/nutrition-machine-learning)
+
+**Nutritional sciences meets predictive modeling.** A self-contained project in the Public Health Methods Lab using real NHANES public-use data. It compares elastic net, random forest, and gradient boosting with training-only preprocessing, PSU-grouped cross-validation, separate-cycle testing, paired uncertainty, subgroup diagnostics, and reproducible scientific figures.
+
+[Executed benchmark](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/outputs/report.md) · [Model card and use boundaries](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/docs/model-card.md)
+
 ### [Administrative Data Pipeline](https://github.com/mjeans/administrative-data-pipeline)
 
 **Evaluation analytics and messy multi-source data.** A reproducible R and Stata workflow that standardizes, deduplicates, joins, and audits synthetic enrollment, service, outcome, and site data. Reviewers can inspect the quality rules, data dictionary, audit trail, tests, and continuous-integration checks.
@@ -39,7 +45,7 @@ I turn complex data into evidence that is transparent enough to audit and practi
 
 | Project | What it demonstrates |
 |---|---|
-| [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) | Nutrition epidemiology, respiratory-disease surveillance, direct age standardization, outbreak risk ratios, rolling signals, Kaplan–Meier analysis, automated tests, and generated outputs |
+| [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) | Synthetic nutrition, surveillance, outbreak, and survival methods, plus a self-contained real-data nutrition ML benchmark with separate validation |
 | [Nutrition epidemiology case study](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
 | [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
 | [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
@@ -73,7 +79,7 @@ My persistent researcher identifier is [ORCID 0000-0002-1140-3185](https://orcid
 
 ## Methods and tools
 
-**Methods:** dietary recall analysis, complex-survey analysis, surveillance rates, direct standardization, cohort measures, time-to-event analysis, quasi-experimental designs, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty, and sensitivity analysis  
+**Methods:** dietary recall analysis, complex-survey analysis, surveillance rates, direct standardization, cohort measures, time-to-event analysis, supervised machine-learning evaluation, quasi-experimental designs, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty, and sensitivity analysis  
 **Analysis:** Stata (advanced); R (working proficiency); Python (portfolio workflows); SQL (foundational, including AWS Athena extracts and portfolio projects)  
 **Data and reporting:** Power BI (basic); reproducible Quarto reporting; limited Tableau and Snowflake exposure  
 **Delivery:** Git, GitHub Actions, automated tests, data contracts, model cards, decision memos, and research governance  
