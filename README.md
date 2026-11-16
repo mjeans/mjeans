@@ -12,6 +12,8 @@ First author of the [TX Sprouts food-processing analysis](https://doi.org/10.101
 
 [Research-to-code companion](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/tx-sprouts-research-companion.md) explains how published scholarship connects to new, clearly labeled methods examples.
 
+[Citable software archive: Public Health Methods Lab v1.1.0](https://doi.org/10.5281/zenodo.24267623) preserves the tested nutrition ML benchmark, simulation study, and research briefs. This is a software archive, not a peer-reviewed publication.
+
 ## Four starting points
 
 | Focus | Inspect the evidence |
