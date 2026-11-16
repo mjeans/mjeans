@@ -1,92 +1,34 @@
 # Matthew Jeans, PhD, PMP
 
-**Quantitative research scientist with a PhD in Nutritional Sciences and PMP certification, working across nutrition, public health, education, and program evaluation.**
+**Quantitative research scientist working across nutrition, public health, education, and program evaluation.** PhD in Nutritional Sciences; PMP-certified project leadership.
 
-I turn complex data into evidence that is transparent enough to audit and practical enough to use. My work emphasizes explicit research questions, defensible estimands, visible data-quality and model diagnostics, reproducible workflows, and clear boundaries between descriptive, predictive, associational, and causal claims.
+I turn complex data into evidence people can inspect, reproduce, and use. My work connects statistical reasoning, reliable data workflows, and research delivery.
 
-## Selected work samples
+[Explore by role](PORTFOLIO.md) · [Full project catalog and research background](BACKGROUND.md) · [Publications](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/)
 
-[Explore the portfolio by role: nutrition, machine learning, evaluation, analytics, or research leadership](PORTFOLIO.md).
+## Published research, visible contributions
 
-- **Published nutrition research:** [TX Sprouts: unprocessed and ultra-processed food consumption](https://pmc.ncbi.nlm.nih.gov/articles/PMC10375509/). As first author, I analyzed dietary recalls in Stata and prepared the figures for this 16-school randomized trial. The analysis accounted for students clustered within schools.
-- **Stata data management:** [Open the enrollment and service-revision do-file](https://github.com/mjeans/administrative-data-pipeline/blob/main/examples/stata-enrollment/stata_data_management_sample.do) · [See the worked examples](https://github.com/mjeans/administrative-data-pipeline/tree/main/examples/stata-enrollment). The synthetic sample reconciles overlapping enrollment periods and corrected visits, distinguishing zero use from incomplete reporting.
-- **Program leadership:** [Decision memo: two sites are missing second dietary recalls](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/second-recall-decision.md). A fictional six-site pilot shows how I would distinguish a reporting delay from an access problem, assign follow-up, and decide whether to continue a scheduling change.
-- **Machine learning and education:** [Executed predictive-modeling case study](https://github.com/mjeans/student-success-predictive-modeling/blob/main/outputs/report.md) · [Scoring-input monitoring](https://github.com/mjeans/student-success-predictive-modeling/blob/main/outputs/input-monitoring-report.md). A synthetic example with temporal validation, calibration, subgroup audits, and controlled failure drills for malformed or shifted inputs.
+First author of the [TX Sprouts food-processing analysis](https://doi.org/10.1016/j.tjnut.2023.04.013). The paper documents my contributions to formal analysis, visualization, conceptualization, methodology, and writing.
 
-## Featured projects
+[Research-to-code companion](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/tx-sprouts-research-companion.md) explains how published scholarship connects to new, clearly labeled methods examples.
 
-### [NHANES Nutrition Survey Analysis](https://github.com/mjeans/nhanes-nutrition-survey-analysis)
+## Four starting points
 
-**Public health, nutrition, and biostatistics.** A reproducible Python analysis of deidentified NHANES 2017–2018 public-use dietary data. It demonstrates two-day dietary measurement, complex-survey weighting and domain estimation, Taylor-linearized uncertainty, missing-data reporting, descriptive regression, unit tests, deterministic outputs, and scheduled validation.
-
-[Executed analysis and sensitivity report](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/outputs/report.md) · [Methods and limitations](https://github.com/mjeans/nhanes-nutrition-survey-analysis/blob/main/docs/methods.md)
-
-### [Nutrition and Machine Learning](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/nutrition-machine-learning)
-
-**Nutritional sciences meets predictive modeling.** A self-contained project in the Public Health Methods Lab using real NHANES public-use data. It compares elastic net, random forest, and gradient boosting with training-only preprocessing, PSU-grouped cross-validation, separate-cycle testing, paired uncertainty, subgroup diagnostics, and reproducible scientific figures.
-
-[Executed benchmark](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/outputs/report.md) · [Model card and use boundaries](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/docs/model-card.md)
-
-### [Administrative Data Pipeline](https://github.com/mjeans/administrative-data-pipeline)
-
-**Evaluation analytics and messy multi-source data.** A reproducible R and Stata workflow that standardizes, deduplicates, joins, and audits synthetic enrollment, service, outcome, and site data. Reviewers can inspect the quality rules, data dictionary, audit trail, tests, and continuous-integration checks.
-
-[Executed before/after audit](https://github.com/mjeans/administrative-data-pipeline/blob/main/outputs/report.md) · [Data dictionary](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/data-dictionary.md) · [Quality rules](https://github.com/mjeans/administrative-data-pipeline/blob/main/docs/quality-rules.md)
-
-### [Student Success Operations Dashboard](https://github.com/mjeans/student-success-operations-dashboard)
-
-**SQL, business intelligence, and decision support.** A tested analytics workflow with a SQL metric layer, dimensional model, reproducible Python-generated data, Power BI-ready measures, dashboard previews, implementation-risk monitoring, and an executive decision memo.
-
-[Current dashboard preview](https://github.com/mjeans/student-success-operations-dashboard/blob/main/assets/executive-dashboard.svg) · [Metric definitions](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/metric-definitions.md) · [Decision memo](https://github.com/mjeans/student-success-operations-dashboard/blob/main/docs/decision-memo.md)
-
-## Additional portfolio projects
-
-### Public health and quantitative methods
-
-| Project | What it demonstrates |
+| Focus | Inspect the evidence |
 |---|---|
-| [Public Health Methods Lab](https://github.com/mjeans/public-health-methods-lab) | Synthetic nutrition, surveillance, outbreak, and survival methods, plus a self-contained real-data nutrition ML benchmark with separate validation |
-| [Nutrition epidemiology case study](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/nutrition-case-study.md) | Two-day dietary-recall averaging, energy-adjusted fiber and sodium density, completeness reporting, descriptive group contrasts, uncertainty, and measurement-error boundaries |
-| [Quasi-experimental program evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) | Propensity-score matching and weighting, common-support and balance diagnostics, clustered inference, regression adjustment, and sensitivity across estimators |
-| [Multilevel outcomes analysis](https://github.com/mjeans/multilevel-outcomes-analysis) | Three-level longitudinal modeling, variance decomposition, random effects, contextual variation, interactions, and residual diagnostics |
-| [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling) | Confirmatory factor analysis, measurement invariance, FIML, latent-variable mediation, model diagnostics, and careful noncausal interpretation |
+| **Nutrition, epidemiology, and machine learning** | [NHANES survey analysis](https://github.com/mjeans/nhanes-nutrition-survey-analysis) · [Nutrition ML benchmark](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/nutrition-machine-learning) · [Three-page research brief](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/output/pdf/nutrition-ml-research-brief.pdf) |
+| **Statistical judgment under difficult assumptions** | [When Methods Fail](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/methods-stress-test): 46,000 simulated datasets examining measurement error, missing outcomes, clustering, and confidence-interval coverage |
+| **Education analytics and decision support** | [Student-success dashboard](https://github.com/mjeans/student-success-operations-dashboard) · [Predictive modeling and input monitoring](https://github.com/mjeans/student-success-predictive-modeling) |
+| **Data management and evaluation operations** | [R/Stata administrative pipeline](https://github.com/mjeans/administrative-data-pipeline) · [Worked Stata enrollment example](https://github.com/mjeans/administrative-data-pipeline/tree/main/examples/stata-enrollment) |
 
-### Data systems, analytics, and project delivery
+## Research leadership and broader methods
 
-| Project | What reviewers can inspect |
-|---|---|
-| [Evaluation data-quality toolkit](https://github.com/mjeans/evaluation-data-quality-toolkit) | Data contracts, domain/range and cross-field rules, issue-level audit output, reusable SQL checks, and continuous integration |
-| [Student success predictive modeling](https://github.com/mjeans/student-success-predictive-modeling) | Temporal validation, calibration, capacity-aware thresholds, subgroup diagnostics, model cards, and human-review controls |
-| [SQL analytics case study](https://github.com/mjeans/sql-analytics-case-study) | CTEs, window functions, cohorts, anomaly review, tested outputs, metric documentation, and decision-ready interpretation |
-| [Research project-management toolkit](https://github.com/mjeans/research-project-management-toolkit) | Project charters, evaluation plans, work plans, risk and stakeholder registers, stage gates, change control, issue templates, and automated template validation |
+[Research delivery toolkit](https://github.com/mjeans/research-project-management-toolkit) · [Nutrition-pilot decision memo](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/second-recall-decision.md) · [Quasi-experimental evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation) · [Multilevel modeling](https://github.com/mjeans/multilevel-outcomes-analysis) · [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling)
 
-## Selected nutrition scholarship
+My [full background](BACKGROUND.md) includes additional public-health methods, data-quality tools, selected scholarship, and tool-proficiency details.
 
-In addition to the featured [first-author TX Sprouts analysis of food processing](https://pubmed.ncbi.nlm.nih.gov/37116658/), selected studies include:
+## What to expect from the work
 
-- [Breakfast consumption in low-income Hispanic elementary school-aged children](https://doi.org/10.3390/nu12072038) — first-author cross-sectional study of anthropometric, metabolic, and dietary parameters
-- [Impact of a school-based gardening, cooking, and nutrition intervention on diet intake and quality](https://pubmed.ncbi.nlm.nih.gov/34578959/) — TX Sprouts cluster randomized controlled trial
-- [Design and participant characteristics of TX Sprouts](https://pmc.ncbi.nlm.nih.gov/articles/PMC7587328/) — intervention design and cohort profile
+Explicit questions and estimands; visible assumptions and diagnostics; tested, reproducible workflows; and clear distinctions between prediction, association, and causation. Portfolio analyses use documented public-use data or labeled synthetic examples. No private client, student, patient, or restricted research records are published.
 
-My persistent researcher identifier is [ORCID 0000-0002-1140-3185](https://orcid.org/0000-0002-1140-3185). The complete public publication list is available through [My NCBI Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/), with an additional profile on [ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3).
-
-## How I work
-
-- **Start with the decision and estimand.** Define the population, comparison, outcome, time window, and interpretation before fitting a model.
-- **Make validity visible.** Surface missingness, data quality, balance, calibration, clustering, uncertainty, subgroup behavior, and model assumptions.
-- **Build for reproduction.** Use deterministic synthetic data, executable workflows, tests, continuous integration, data dictionaries, and saved reference outputs.
-- **Communicate limits clearly.** Separate descriptive, predictive, associational, and causal claims; keep privacy and responsible-use constraints close to the results.
-
-## Methods and tools
-
-**Methods:** dietary recall analysis, complex-survey analysis, surveillance rates, direct standardization, cohort measures, time-to-event analysis, supervised machine-learning evaluation, quasi-experimental designs, causal inference, longitudinal and multilevel models, measurement models, missing-data methods, uncertainty, and sensitivity analysis  
-**Analysis:** Stata (advanced); R (working proficiency); Python (portfolio workflows); SQL (foundational, including AWS Athena extracts and portfolio projects)  
-**Data and reporting:** Power BI (basic); reproducible Quarto reporting; limited Tableau and Snowflake exposure  
-**Delivery:** Git, GitHub Actions, automated tests, data contracts, model cards, decision memos, and research governance  
-**Project leadership:** PMP-certified project leadership, research operations, stakeholder engagement, scope management, and risk management
-
-## Portfolio standards
-
-Portfolio projects use either deterministic synthetic records or explicitly documented deidentified public-use data. No client, student, patient, protected health information, restricted records, or row-level public-use files are republished. Each project is designed to expose the full workflow—assumptions, code, quality checks, outputs, interpretation, and limitations—rather than only a polished final chart.
-
-[LinkedIn](https://www.linkedin.com/in/matthewjeans/) · [ORCID](https://orcid.org/0000-0002-1140-3185) · [My NCBI Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/) · [ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3)
+[LinkedIn](https://www.linkedin.com/in/matthewjeans/) · [ORCID 0000-0002-1140-3185](https://orcid.org/0000-0002-1140-3185) · [My NCBI Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/matthew.jeans.1/bibliography/public/) · [ResearchGate](https://www.researchgate.net/profile/Matthew-Jeans-3)

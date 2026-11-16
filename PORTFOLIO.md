@@ -28,6 +28,11 @@ The [education predictive-modeling report](https://github.com/mjeans/student-suc
 
 ## Evaluation and quantitative research
 
+Start with [When Methods Fail](https://github.com/mjeans/public-health-methods-lab/tree/main/projects/methods-stress-test): a new simulation study with 23 scenarios and 2,000 repetitions per scenario. It separates measurement error, missing outcomes, and clustered assignment. Inspect bias, interval coverage, Monte Carlo uncertainty, and the assumptions under which each correction succeeds or fails.
+
+The [publication companion](https://github.com/mjeans/public-health-methods-lab/blob/main/docs/tx-sprouts-research-companion.md) links documented TX Sprouts contributions to these new teaching examples without presenting synthetic code as the original trial analysis.
+
+
 - [Quasi-experimental evaluation](https://github.com/mjeans/quasi-experimental-program-evaluation/blob/main/outputs/report.md): inspect overlap and balance before effect estimates; distinguish the full ATT from the retained matched-treated subset.
 - [Multilevel outcomes](https://github.com/mjeans/multilevel-outcomes-analysis/blob/main/outputs/report.md): inspect person/organization variance, time interactions, and the independent-cluster count—not just the number of repeated observations.
 - [Structural equation modeling](https://github.com/mjeans/structural-equation-modeling/blob/main/outputs/report.md): review measurement invariance and solution diagnostics before structural paths. Excellent fit to data generated from the model is an implementation check, not empirical confirmation of the theory.
@@ -47,6 +52,10 @@ Then inspect [as-of cohort SQL](https://github.com/mjeans/sql-analytics-case-stu
 The [second dietary recall decision memo](https://github.com/mjeans/research-project-management-toolkit/blob/main/examples/nutrition-evaluation/second-recall-decision.md) is a short fictional leadership exercise. It distinguishes a delayed upload from a scheduling barrier, assigns owners, and specifies when to stop or continue a small change.
 
 The surrounding toolkit supplies governance gates, work plans, risks, and requirement-to-deliverable traceability. It demonstrates how I would structure a decision, not a claim that the fictional pilot took place.
+
+## Take a research brief into the discussion
+
+The [three-page nutrition ML brief](https://github.com/mjeans/public-health-methods-lab/blob/main/projects/nutrition-machine-learning/output/pdf/nutrition-ml-research-brief.pdf) is generated from the frozen benchmark's aggregate evidence. It includes a study-design diagram, model comparisons, the primary paired dietary contrast, and use limitations. It is a portfolio research brief, not a peer-reviewed publication.
 
 ## Verify a claim
 
